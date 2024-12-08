@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>Course Registration Form</h1>
+    <form action="/submit-registration" method="post">
+        <label for="first-name">First Name*:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="first-name">Middle Name:</label>
+        <input type="text" id="middle-name" name="middle-name">
+
+        <label for="last-name">Last Name*:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="first-name">Father First Name*:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="first-name">Father Middle Name:</label>
+        <input type="text" id="middle-name" name="middle-name">
+
+        <label for="last-name">Father Last Name*:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="email">Re-email*:</label>
+        <input type="password" id="email" name="email" required>
+
+        <label for="student-id">Student ID*:</label>
+        <input type="text" id="student-id" name="student-id" required>
+
+        <label for="dob">Date of Birth*:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label>Gender*:</label>
+        <div class="gender-container">
+            <label>
+
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                    <input type="radio" name="gender" value="other" required> Other
+            </label>
+        </div>
+
+        <label for="address">Address*:</label>
+        <textarea id="comments" name="comments" ></textarea>
+
+        <label for="course-selection">Select Course:</label>
+        <select id="course-selection" name="course" required>
+            <option value="">--Please choose an option--</option>
+            <option value="cs101">CS101 - Introduction to Computer Science</option>
+            <option value="math101">MATH101 - Calculus I</option>
+            <option value="phy101">PHY101 - Physics I</option>
+            <option value="eng101">ENG101 - English Literature</option>
+            <option value="bio101">BIO101 - Biology I</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        
+        <div class = "terms">
+            <input type="checkbox" id = "terms" name = "terms" required>
+            <label for="terms">I am agree to the terms and conditions</label>
+        </div>
+        <button type="submit" onclick="sub()">Register</button>
+    </form>
+</div>
+<script>
+    function sub(){
+        alart("success")  
+    }
+</script>
+</body>
+</html>
